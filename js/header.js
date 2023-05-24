@@ -431,8 +431,42 @@ header.innerHTML = `<div class="top-panel">
 </div>
 <div class="signin-form" id="signin">
     <div class="signin-form-control">
-        <p>This is sign in form</p>
-        <button class="exit-signin-form">Exit</button>
+        <div class="signin-title-bar">
+            <p>Đăng nhập</p>
+            <button class="exit-signin-form"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="signin-form-control-inner">
+            <form action="">
+                <div class="signin-input">
+                    <div class="signin-label">
+                        <label for="signInEmail">e-mail<span>*</span></label>
+                    </div>
+                    <input type="email" id="signInEmail" name="signInEmail"/>
+                </div>
+                <div class="signin-input">
+                    <div class="signin-label">
+                        <label for="signInPassword">MẬT KHẨU<span>*</span></label>
+                        <a>Quên mật khẩu?</a>
+                    </div>
+                    <input type="password" id="signInPassword" name="signInPassword"/>
+                </div>
+                <div class="social-signin">
+                    <p>Hoặc đăng nhập với nhận dạng nhà cung cấp khác</p>
+                    <button>
+                        <img src="./assets/images/g-logo.png" alt="" />
+                        <span>Login with Google</span>
+                    </button>
+                </div>
+                <a href="./register.html" class="signup-link">Đăng ký tài khoản mới</a>
+                <div class="footer-form-control">
+                    <div class="footer-form-control-checkbox">
+                        <input type="checkbox" id="nhoMK"/>
+                        <label for="nhoMK">Nhớ mật khẩu</label>
+                    </div>
+                    <button>Đăng nhập</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>`;
 window.addEventListener("scroll", () => {

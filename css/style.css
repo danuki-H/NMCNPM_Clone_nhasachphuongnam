@@ -318,9 +318,134 @@ body{
     display: flex;
 }
 .signin-form-control{
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: auto;
     background-color: #fff;
+}
+.signin-title-bar{
+    width: 100%;
+    padding: 13px 20px 10px;
+    background-color: #cc4125;
+    color: #000;
+    position: relative;
+}
+.signin-title-bar p{
+    font-size: 18px;
+}
+.signin-title-bar .exit-signin-form{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.signin-form-control-inner{
+    padding: 10px 20px;
+}
+.signin-form-control-inner .signin-input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.signin-form-control-inner .signin-input .signin-label{
+    width: 100%;
+    position: relative;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.signin-form-control-inner .signin-input .signin-label label{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.signin-form-control-inner .signin-input .signin-label label span{
+    color: #eb401e;
+    font-size: 20px;
+}
+.signin-form-control-inner .signin-input .signin-label a{
+    display: block;
+    color: #747e97;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+.signin-form-control-inner .signin-input .signin-label a:hover{
+    color: #fba626;
+}
+.signin-form-control-inner .signin-input input{
+    width: 100%;
+    border: 1px solid #eb401e;
+    padding: 8px 5px 7px;
+    font-size: 115%;
+}
+.signin-form-control-inner .signin-input input:focus{
+    outline: none;
+}
+.signin-form-control-inner .social-signin{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.signin-form-control-inner .social-signin p{
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.signin-form-control-inner .social-signin button{
+    width: 270px;
+    border: none;
+    background-color: rgb(66, 136, 206);
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signin-form-control-inner .social-signin button img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.signin-form-control-inner .signup-link{
+    display: block;
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+.signin-form-control-inner .signup-link:hover{
+    color: #000;
+}
+.signin-form-control-inner .footer-form-control{
+    display: flex;
+    justify-content: space-between;
+}
+.signin-form-control-inner .footer-form-control .footer-form-control-checkbox label{
+    font-size: 13px;
+}
+.signin-form-control-inner .footer-form-control button{
+    border: none;
+    background-color: #f4cf2b;
+    transition: all .3s ease;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+.signin-form-control-inner .footer-form-control button:hover{
+    background-color: #eb401e;
 }
 .btn-cart{
     display: flex;
