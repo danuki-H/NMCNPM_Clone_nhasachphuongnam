@@ -8,6 +8,7 @@
     <title>Đăng ký</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registerStyle.css">
 </head>
 <body>
     <noscript>Turn on script, please!</noscript>
@@ -19,7 +20,82 @@
     <header class="header" id="header"></header>
     <section class="content" id="content">
         <div class="container">
-            
+            <form action="" class="register">
+                <h3 class="title">Đăng ký tài khoản mới</h3>
+      
+                <label for="usename" class="label"
+                  >Họ và Tên <span class="required">*</span></label
+                >
+      
+                <input
+                  type="text"
+                  id="usename"
+                  class="register-input name-input"
+                  required
+                />
+      
+                <label for="phone" class="label">Số điện thoại</label>
+      
+                <input
+                  type="text"
+                  id="phone"
+                  class="register-input phone-input"
+                  required
+                />
+      
+                <label for="email" class="label"
+                  >E-mail <span class="required">*</span></label
+                >
+      
+                <input
+                  type="email"
+                  id="email"
+                  class="register-input email-input"
+                  required
+                />
+      
+                <label for="passw" class="label"
+                  >Mật khẩu <span class="required">*</span></label
+                >
+      
+                <input
+                  type="password"
+                  id="passw"
+                  class="register-input pw-input"
+                  required
+                />
+      
+                <label for="checked-pw" class="label"
+                  >Xác nhận mật khẩu <span class="required">*</span></label
+                >
+      
+                <input
+                  type="password"
+                  id="checked-pw"
+                  class="register-input checked-pw-input"
+                  required
+                />
+                <h3 class="title title-info">Đăng ký nhận thông tin</h3>
+                <p class="sub-title">Đăng ký nhận bản tin của Nhà Sách Phương Nam</p>
+                <div class="checked">
+                  <input type="checkbox" id="check-box" class="input-check-box" />
+                  <label for="check-box"
+                    >Company news and unique discounts for subscribers</label
+                  >
+                </div>
+      
+                <h3 class="title title-info">Tài khoản mạng xã hội</h3>
+                <p class="sub-title">Đăng kí kết nối với mạng xã hội để đăng nhập</p>
+      
+                <a href="#" class="logo-link">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/010/353/285/original/colourful-google-logo-on-white-background-free-vector.jpg"
+                    alt=""
+                    class="img"
+                /></a>
+      
+                <button type="submit" class="register-btn">Đăng Ký</button>
+              </form>
         </div>
     </section>
     <footer class="footer" id="footer"></footer>

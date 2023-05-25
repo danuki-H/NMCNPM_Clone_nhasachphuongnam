@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.content{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+ .content * {
+  font-family: "Poppins", sans-serif;
+}
+.register {
+  width: 100%;
+  height: min-content;
+  background-color: transparent;
+  box-shadow: #000000 0px 0px 0px 1px;
+  font-size: 13px;
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.register-input {
+  width: 100%;
+  background-color: transparent;
+  margin-top: 3px;
+  padding: 4px 3px;
+  border: 1px solid red;
+  outline: none;
+}
+
+.register-input:focus {
+  border-color: rgb(249, 141, 0);
+}
+
+.register .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0px 0px 10px;
+  /* margin-top: 20px; */
+}
+
+.register .title-info {
+  margin-top: 20px;
+}
+
+.register .label {
+  /* display: inline-block; */
+  position: relative;
+  font-size: 13px;
+  font-weight: 600;
+  padding-top: 6px;
+  margin-top: 20px;
+  width: fit-content;
+  top: 0;
+}
+
+.register .required {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  color: #c92100;
+  top: 0;
+  right: -11px;
+  user-select: none;
+}
+.register .sub-title {
+  margin-top: 10px;
+  font-size: 13px;
+  padding: 6px 0;
+}
+
+.register .checked {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.register .logo-link {
+  width: 32px;
+  height: 32px;
+  /* background-color: #fff; */
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.register .logo-link:hover {
+  opacity: 0.5;
+}
+
+.register .img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.register-btn {
+  display: block;
+  background-color: #e6d03f;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 10px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 90px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.register-btn:hover {
+  background-color: #c92100;
+  transition: all 0.4s ease-in-out;
+}
