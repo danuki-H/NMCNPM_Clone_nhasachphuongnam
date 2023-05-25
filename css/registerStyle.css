@@ -110,11 +110,10 @@
   margin-top: 20px;
   margin-left: 20px;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease;
   margin-bottom: 30px;
 }
 
 .register-btn:hover {
   background-color: #c92100;
-  transition: all 0.4s ease-in-out;
 }
