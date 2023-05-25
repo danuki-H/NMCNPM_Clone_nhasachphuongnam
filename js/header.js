@@ -80,7 +80,7 @@ header.innerHTML = `<div class="top-panel">
         <div class="row header-navigation">
             <div class="container">
                 <ul>
-                    <li><a href="#">Sách tiếng </a>
+                    <li><a href="#">Sách tiếng việt</a>
                         <div class="sub-menu">
                             <div class="sub-menu-item">
                                 <p>Theo thể loại</p>
