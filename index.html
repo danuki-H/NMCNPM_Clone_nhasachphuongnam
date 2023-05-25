@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
     <title>Nhà sánh Phương Nam trực tuyến</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
     <noscript>Turn on script, please!</noscript>
@@ -17,10 +23,50 @@
         </svg>                                 
     </a>
     <header class="header" id="header"></header>
-    <section class="content" id="content"></section>
+    <section class="content" id="content">
+        <div class="container">
+            <div class="row justify-space-between top-banner">
+                <div class="col side-banner-left">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="./assets/images/carosel-banner/Banner_Album_Hoai_Nam_890x396px-01.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/carosel-banner/Banner_Ga_Du_Dang_890x396px-01.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/carosel-banner/Banner_Ke_Thua_Cam_Xuc_890x396px-01.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/carosel-banner/Banner_KM_Ngoai_Van_890x396px-01.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/carosel-banner/Banner_Nguoi_phu_nu_uy_luc_890x396px-01.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/carosel-banner/Banner_PQT_890x396px-01.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="col side-banner-right">
+                    <div class="side-banner-img"><img src="./assets/images/side-banner/Banner_top_290x198px-01.jpg" alt=""></div>
+                    <div class="side-banner-img"><img src="./assets/images/side-banner/Banner_bottom_290x198px-02.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer" id="footer"></footer>
     <script type="module" src="js/main.js"></script>
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 </html>
