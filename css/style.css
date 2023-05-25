@@ -66,7 +66,7 @@ body{
 }
 @media (min-width: 1200px) {
     .container {
-      max-width: 1140px;
+      max-width: 1190px;
     }
 }
 .header{
@@ -86,8 +86,8 @@ body{
     width: 100%;
 }
 .link-panel{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 .link-panel a{
     display: block;
@@ -108,7 +108,7 @@ body{
     width: 100%;
 }
 .nav-header .row{
-    padding: 30px 0;
+    padding: 22px 0;
     align-items: center;
     justify-content: space-between;
 }
