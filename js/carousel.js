@@ -39,12 +39,23 @@ function slideShow(slide){
 ///
 let slide1 = {
   btnControl: {
-    next:".btn-carousel-next",
-    prev:".btn-carousel-prev"
+    next:".btn-carousel-next-1",
+    prev:".btn-carousel-prev-1"
   },
-  wraper: ".carousel-category-1",
+  wraper: ".inner-carousel-category-1",
   slide: ".product-item",
   velocity: 238,
   displaySlide: 5
 }
 slideShow(slide1);
+let slide2 = {
+  btnControl: {
+    next:".btn-carousel-next-2",
+    prev:".btn-carousel-prev-2"
+  },
+  wraper: ".inner-carousel-category-2",
+  slide: ".product-item",
+  velocity: 238,
+  displaySlide: 5
+}
+slideShow(slide2);
