@@ -249,3 +249,6 @@ body{
 .icon-product-item-social:hover{
     color: var(--icon-color);
 }
+.trademark{
+    margin-top: 20px;
+}
