@@ -331,3 +331,16 @@ body{
 .btn-carousel-next{
     right: 0;
 }
+.category-banner-km{
+    width: 100%;
+    margin: 10px 0;
+}
+.category-banner-km img{
+    width: 100%;
+}
+.adhot{
+    width: 100%;
+    border: 3px solid #4a86e8;
+    padding: 15px 30px;
+    margin: 30px 0;
+}

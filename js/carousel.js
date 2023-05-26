@@ -75,4 +75,15 @@ let slide3 = {
   displaySlide: 5
 }
 slideShow(slide3);
+let slide4 = {
+  btnControl: {
+    next:".btn-carousel-next-4",
+    prev:".btn-carousel-prev-4"
+  },
+  wraper: ".inner-carousel-category-4",
+  slide: ".product-item",
+  velocity: 238,
+  displaySlide: 5
+}
+slideShow(slide4);
 
