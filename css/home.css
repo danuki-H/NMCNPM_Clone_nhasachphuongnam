@@ -224,6 +224,10 @@ body{
     margin-top: 10px;
     cursor: pointer;
 }
+.btn-add-product-item.run-out{
+    background-color: #cc4125;
+    color: #000;
+}
 .btn-add-product-item i{
     margin-right: 5px;
 }

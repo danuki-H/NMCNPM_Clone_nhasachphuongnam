@@ -21,12 +21,17 @@ function slideShow(slide){
   let carouselSlider = document.querySelector(slide.wraper);
   let countSlide = carouselSlider.querySelectorAll(slide.slide).length;
   let countSlideDisplay = slide.displaySlide;
-  btnCarouselNext.addEventListener('click', () => {
+  const nextSlideShow = () => {
     translateX -= translateXVelocity;
     if(translateX < -1*(translateXVelocity*countSlide -translateXVelocity*countSlideDisplay)){
       translateX = 0;
     }
     carouselSlider.style.transform = `translateX(${translateX}px)`;
+  }
+  let timeInterval = setInterval(nextSlideShow, 2000);
+  btnCarouselNext.addEventListener('click', () => {
+    nextSlideShow();
+    clearInterval(timeInterval);
   });
   btnCarouselPrev.addEventListener('click', () => {
     translateX += translateXVelocity;
@@ -59,3 +64,15 @@ let slide2 = {
   displaySlide: 5
 }
 slideShow(slide2);
+let slide3 = {
+  btnControl: {
+    next:".btn-carousel-next-3",
+    prev:".btn-carousel-prev-3"
+  },
+  wraper: ".inner-carousel-category-3",
+  slide: ".product-item",
+  velocity: 238,
+  displaySlide: 5
+}
+slideShow(slide3);
+
