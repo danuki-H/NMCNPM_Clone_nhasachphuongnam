@@ -647,3 +647,24 @@ body{
     padding: 7px;
     background-color: #f9cb9c;
 }
+.route-link{
+    width: 100%;
+    margin: 10px 0;
+    text-align: left;
+    display: flex;
+}
+.route-link a{
+    display: block;
+    color: #f06c0d;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.route-link a i{
+    color: #4f4f4f;
+    margin: 0 10px;
+}
+.route-link a:last-child{
+    color: #000;
+    text-decoration: underline;
+}
