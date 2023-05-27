@@ -87,3 +87,15 @@ let slide4 = {
 }
 slideShow(slide4);
 
+//
+// slideShow({
+//   btnControl: {
+//     next: "btn-adhot-carousel-next",
+//     prev: "btn-adhot-carousel-prev"
+//   },
+//   wraper: "inner-adhot-carousel",
+//   slide: "adhot-product-item",
+//   velocity: 238,
+//   displaySlide: 3
+// });
+
