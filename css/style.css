@@ -449,6 +449,13 @@ body{
 }
 .btn-cart{
     display: flex;
+    color: #000;
+    position: relative;
+}
+.btn-cart a{
+    display: flex;
+    align-items: center;
+    color: #000;
 }
 .btn-cart p{
     font-size: 12px;
@@ -457,6 +464,92 @@ body{
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 700;
+}
+.cart-container{
+    padding: 15px;
+    border: 1px solid #ff6040;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 20;
+    background-color: #fff;
+    width: 400px;
+    display: none;
+}
+.cart-container.active{
+    display: block;
+}
+.cart-products{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    margin-bottom: 20px;
+}
+.cart-product-item{
+    display: flex;
+    margin-bottom: 10px;
+    height: 40px;
+}
+.cart-product-item img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+.cart-product-item img:hover{
+    border: 1px solid #f06c0d;
+}
+.cart-product-item p{
+    color: #000;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 0 8px;
+    height: 40px;
+    cursor: pointer;
+}
+.cart-product-item p:hover{
+    color: #fba626;
+}
+.cart-product-item-price{
+    margin-top: auto;
+    margin-bottom: 0;
+    font-size: 12px;
+    margin-left: auto;
+}
+.cart-product-item-price span{
+    margin: 0;
+}
+.cart-product-item-price span i{
+    font-size: 12px;
+}
+.cart-product-item-price span:last-child{
+    color: #f44927;
+}
+.cart-group-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-group-btn a{
+    display: block;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    background-color: #fba626;
+    font-size: 11px;
+    transition: all 0.3s ease;
+}
+.cart-group-btn a:hover{
+    background-color: #cc4125;
+}
+.cart-group-btn a:first-child{
+    background-color: #cc4125;
+}
+.cart-group-btn a:first-child:hover{
+    background-color: #fba626;
 }
 .nav-header .container{
     position: relative;

@@ -70,8 +70,34 @@ header.innerHTML = `<div class="top-panel">
                     <div>
                         <p>Giỏ hàng</p>
                         <p>
-                            <span id="quantity">0</span>&nbsp;sản phẩm
+                            <span id="quantity">2</span>&nbsp;sản phẩm
                         </p>
+                    </div>
+                    <div class="cart-container">
+                        <div class="cart-products">
+                            <div class="cart-product-item">
+                                <img src="./assets/images/sachtiengviet/img-1-2.jpg" alt="">
+                                <p class="cart-product-item-name">Số Phận Của Vị Hôn Thê - Tập 2</p>
+                                <div class="cart-product-item-price">
+                                    <span class="soluong-sanpham">1</span>
+                                    <span><i class="fa-solid fa-xmark"></i></span>
+                                    <span>95,000 đ</span>
+                                </div>
+                            </div>
+                            <div class="cart-product-item">
+                                <img src="./assets/images/sachtiengviet/img-1-3.jpg" alt="">
+                                <p class="cart-product-item-name">Số Phận Của Vị Hôn Thê - Tập 1</p>
+                                <div class="cart-product-item-price">
+                                    <span class="soluong-sanpham">1</span>
+                                    <span><i class="fa-solid fa-xmark"></i></span>
+                                    <span>95,000 đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-group-btn">
+                            <a href="cart.html">Xem giỏ hàng</a>
+                            <a href="#">thanh toán</a>
+                        </div>
                     </div>
                 </span>
             </div>
@@ -492,4 +518,13 @@ document.getElementById("btn-user-toggle").addEventListener("click", () => {
         document.querySelector(".user-infor").classList.remove("active");
     }
     userToggle = !userToggle;
+})
+let cartToogle = true;
+document.querySelector(".btn-cart").addEventListener("click", () => {
+    if(cartToogle){
+        document.querySelector(".cart-container").classList.add("active");
+    }else{
+        document.querySelector(".cart-container").classList.remove("active");
+    }
+    cartToogle = !cartToogle;
 })
