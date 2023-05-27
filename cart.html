@@ -29,36 +29,141 @@
             <!--  -->
             <div class="cart-info">
                 <h1 class="cart-info-row cart-title"><i class="fa-solid fa-cart-shopping"></i>Chi tiết giỏ hàng</h1>
-                <div class="cart-info-row">
-                    <a href="index.html">tiếp tục mua hàng</a>
-                    <a href="#" class="cart-info-delete">xóa giỏ hàng</a>
-                    <a href="#">thanh toán</a>
+                <div class="cart-info-row cart-info-btn-link">
+                    <a href="index.html" class="">tiếp tục mua hàng</a>
+                    <a href="#" class=" cart-info-delete">xóa giỏ hàng</a>
+                    <a href="#" class="">thanh toán</a>
                 </div>
-                <div class="cart-info-row cart-infor-list">
-                    <table style="width:100%">
-                        <thead>
+                <div class="cart-info-row cart-info-list">
+                    <table class="tbl">
                             <tr>
                                 <th>Sản phẩm</th>
                                 <th>Đơn giá</th>
                                 <th>Số lượng</th>
                                 <th>Tổng giá</th>
                             </tr>
-                        </thead>
-                        <tbody>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>
+                                    <div class="col-1">
+                                        <img src="./assets/images/sachtiengviet/img-1-2.jpg" alt="" class="item-img">
+                                        <div class="item-content">
+                                            <div class="item-title">
+                                                <h3>Số Phận Của Vị Hôn Thê - Tập 2</h3>
+                                                <span class="btn-item-delete"><i class="fa-regular fa-circle-xmark"></i></span>
+                                            </div>
+                                            <div class="item-des">
+                                                <p class="item-id">Barcode: 893524488811</p>
+                                                <div class="shop-name">Nhà bán hàng: <a href="index.html">Phương Nam Online</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="col-2"><span class="dongia">95000</span><span>đ</span></div>
+                                </td>
+                                <td>
+                                    <div class="col-3">
+                                        <div class="col-3-inner">
+                                            <input type="text" value="1">
+                                            <div class="up-down-btn">
+                                                <button class="up-btn">+</button>
+                                                <button class="down-btn">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="col-4">
+                                        <span class="tonggia">95000</span><span>đ</span>
+                                    </div>
+                                </td>
                             </tr>
-                        </tbody>
+                            <tr>
+                                <td>
+                                    <div class="col-1">
+                                        <img src="./assets/images/sachtiengviet/img-1-3.jpg" alt="" class="item-img">
+                                        <div class="item-content">
+                                            <div class="item-title">
+                                                <h3>Số Phận Của Vị Hôn Thê - Tập 1</h3>
+                                                <span class="btn-item-delete"><i class="fa-regular fa-circle-xmark"></i></span>
+                                            </div>
+                                            <div class="item-des">
+                                                <p class="item-id">Barcode: 893524488811</p>
+                                                <div class="shop-name">Nhà bán hàng: <a href="index.html">Phương Nam Online</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="col-2">
+                                        <span class="dongia">95000</span><span>đ</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="col-3">
+                                        <div class="col-3-inner">
+                                            <input type="text" value="1">
+                                            <div class="up-down-btn">
+                                                <button class="up-btn">+</button>
+                                                <button class="down-btn">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="col-4">
+                                        <span class="tonggia">95000</span><span>đ</span>
+                                    </div>
+                                </td>
+                            </tr>
                     </table>
                 </div>
-                <div class="cart-info-row"></div>
-                <div class="cart-info-row"></div>
+                <div class="cart-info-row magg-tt" style="justify-content: space-between;">
+                    <div class="magiamgia">
+                        <input type="text" placeholder="Thẻ quà tặng hoặc mã giảm giá">
+                        <button>Áp dụng</button>
+                    </div>
+                    <div class="tamtinh">
+                        <div>
+                            <span>Tạm tính</span>
+                            <span class="giatamtinh"></span>
+                            <span>đ</span>
+                        </div>
+                        <div>
+                            <span>
+                                Giao tiết kiệm (
+                                <i class="fa-solid fa-plane"></i>
+                                <button class="thaydoidiachigiaohang">THAY ĐỔI</button>
+                                )
+                            </span>
+                            <span class="giatietkiem"></span>
+                            <span>đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-info-row final-price" style="flex-direction: column;">
+                    <div class="cart-info-row" style="justify-content: flex-end;">
+                        <span>TỔNG CỘNG</span>
+                        <span class="tongcong"></span>
+                        <span>Đ</span>
+                    </div>
+                    <div class="cart-info-row" style="justify-content: space-between;">
+                        <a href="index.html">Tiếp tục mua hàng</a>
+                        <button>Thanh toán</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <div class="phivanchuyen">
+        <div class="phivanchuyen-inner">
+            <div class="tieude-phivanchuyen">
+                <p>Phí vận chuyển</p>
+                <button class="thoat"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="form-phivanchuyen">COMMING SOON</div>
+        </div>
+    </div>
     <footer class="footer" id="footer"></footer>
     <script src="js/main.js"></script>
     <script src="js/header.js"></script>

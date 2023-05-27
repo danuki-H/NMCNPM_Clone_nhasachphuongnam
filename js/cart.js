@@ -34,3 +34,68 @@ let template_empty_cart_item = `
 btn_delete_cart.addEventListener("click", () => {
     cart_info.innerHTML = template_empty_cart_item;
 })
+
+let trs = document.querySelectorAll(".tbl tr");
+let countTrs = trs.length;
+let giatk = 19000
+document.querySelector(".giatietkiem").innerHTML = giatk;
+function update(){
+    window.requestAnimationFrame(update);
+    if(countTrs == 1){
+        cart_info.innerHTML = template_empty_cart_item;
+    }
+    let list = document.querySelectorAll(".tonggia");
+    let tonggia = 0;
+    list.forEach(item => {
+        tonggia+= parseInt(item.innerHTML);
+    })
+    document.querySelector(".giatamtinh").innerHTML = tonggia;
+    document.querySelector(".tongcong").innerHTML = tonggia - giatk;
+}
+update();
+trs.forEach(tr => {
+    let delete_tr = tr.querySelector(".btn-item-delete");
+    if(delete_tr){
+        delete_tr.addEventListener("click", () => {
+            tr.remove();
+            countTrs--;
+        })
+    }
+    let dongia = tr.querySelector(".dongia"),
+        tonggia = tr.querySelector(".tonggia"),
+        input = tr.querySelector("input"),
+        upBtn = tr.querySelector(".up-btn"),
+        downBtn = tr.querySelector(".down-btn");
+    let sl = 1;
+    if(input){
+        input.addEventListener("change", () => {
+            if(parseInt(input.value) > 1 && !isNaN(input.value)){
+                sl = parseInt(input.value);
+                tonggia.innerHTML = parseInt(dongia.innerHTML) * sl;
+            }
+            input.value = sl;
+        });
+    }
+    if(upBtn){
+        upBtn.addEventListener("click", () => {
+            sl++;
+            input.value = sl;
+            tonggia.innerHTML = parseInt(dongia.innerHTML) * sl;
+        })
+    }
+    if(downBtn){
+        downBtn.addEventListener("click", () => {
+            if(sl>1){
+                sl--;
+                input.value = sl;
+                tonggia.innerHTML = parseInt(dongia.innerHTML) * sl;
+            }
+        })
+    }
+})
+document.querySelector(".thaydoidiachigiaohang").addEventListener("click", () => {
+    document.querySelector(".phivanchuyen").classList.add("active");
+})
+document.querySelector(".thoat").addEventListener("click", () => {
+    document.querySelector(".phivanchuyen").classList.remove("active");
+})
