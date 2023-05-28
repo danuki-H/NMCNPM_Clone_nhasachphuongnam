@@ -749,13 +749,17 @@ body{
 .route-link a{
     display: block;
     color: #f06c0d;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: capitalize;
     font-weight: bold;
+    transition: all 0.2s ease;
+}
+.route-link a:not(:last-child):hover{
+    color: #f4cf2b;
 }
 .route-link a i{
     color: #4f4f4f;
-    margin: 0 10px;
+    margin: 0 4px;
 }
 .route-link a:last-child{
     color: #000;
