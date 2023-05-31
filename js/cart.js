@@ -50,7 +50,7 @@ function update(){
         tonggia+= parseInt(item.innerHTML);
     })
     document.querySelector(".giatamtinh").innerHTML = tonggia;
-    document.querySelector(".tongcong").innerHTML = tonggia - giatk;
+    document.querySelector(".tongcong").innerHTML = tonggia + giatk;
 }
 update();
 trs.forEach(tr => {
